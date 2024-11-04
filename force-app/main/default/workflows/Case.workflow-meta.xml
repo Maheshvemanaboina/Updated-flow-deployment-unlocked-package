@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Awaiting_Helpdesk_Customer_Response_Notification</fullName>
+        <description>Awaiting Helpdesk Customer Response Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Requestor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Awaiting_Helpdesk_Customer_Response_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Helpdesk_Case_Closed_Alert_Notification</fullName>
+        <description>Helpdesk Case Closed Alert Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Case_Requestor__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Helpdesk_Case_Closed_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Urgent_Priority_Helpdesk_Case_Alert</fullName>
+        <description>Urgent Priority Helpdesk Case Alert</description>
+        <protected>false</protected>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Urgent_Priority_Helpdesk_Case_Alert</template>
+    </alerts>
+</Workflow>

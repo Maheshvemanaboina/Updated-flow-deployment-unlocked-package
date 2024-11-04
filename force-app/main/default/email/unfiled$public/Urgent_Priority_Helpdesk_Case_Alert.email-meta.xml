@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Urgent Priority Helpdesk Case Alert</name>
+    <style>none</style>
+    <subject>New Urgent-Priority Helpdesk Case#{!Case.CaseNumber} Alert</subject>
+    <textOnly>Helpdesk Support
+
+Dear Helpdesk Team,
+
+We wanted to inform you that a new Urgent-priority case has been created in Salesforce. The details of the case are as follows:
+
+Case Number: {!Case.CaseNumber}
+
+Subject: {!Case.Subject}
+
+Priority: {!Case.Priority}
+
+Requestor Name: {!Case.Case_Requestor__c}
+
+This case requires immediate attention. Please review the case and take the necessary actions to provide a timely resolution.
+
+Best Regards,
+
+Helpdesk Support Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

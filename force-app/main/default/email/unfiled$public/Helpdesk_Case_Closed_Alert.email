@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      .case-details {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Helpdesk Support</h2>
+    </div>
+    <div class="content">
+      <p>Dear {!Case.Case_Requestor__c},</p>
+     </br>
+      <p>We are pleased to inform you that your Case #<a href="{!Case.Link}">{!Case.CaseNumber}</a>, has been successfully resolved and is now closed. We hope that the resolution has met your expectations, and your issue has been satisfactorily addressed. The details of the case are as follows:</p>
+      <div class="case-details">
+        <p><strong>Case Subject:</strong> {!Case.Subject}</p>
+        <p><strong>Case Owner:</strong> {!Case.OwnerFullName} </p>
+      </div>
+      <p>However, your satisfaction is of utmost importance to us. If, for any reason, you find that the issue is not completely resolved or if you encounter any further concerns related to this matter, please do not hesitate to reach out to us. We are more than happy to reopen the case and continue our efforts to ensure your complete satisfaction.</p>
+</br>
+      <p>Best Regards,</p>
+      <p>Helpdesk Support Team</p>
+    </div>
+  </body>
+</html>

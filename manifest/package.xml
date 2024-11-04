@@ -147,8 +147,18 @@
 		<name>CustomField</name>
 	</types>
 	<types>
+		<members>unfiled$public/Awaiting_Helpdesk_Customer_Response_Alert</members>
+		<members>unfiled$public/Helpdesk_Case_Closed_Alert</members>
+		<members>unfiled$public/Urgent_Priority_Helpdesk_Case_Alert</members>
+		<name>EmailTemplate</name>
+	</types>
+	<types>
 		<members>Case_Email_Alerts</members>
 		<name>Flow</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>GlobalValueSet</name>
 	</types>
 	<types>
 		<members>Helpdesk_Queue_Members</members>

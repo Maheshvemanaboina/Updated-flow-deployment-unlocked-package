@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Helpdesk Case Closed Alert</name>
+    <style>none</style>
+    <subject>Helpdesk Case#{!Case.CaseNumber} Closed, We&apos;re Here to Help</subject>
+    <textOnly>Helpdesk Support
+
+Dear {!Case.Case_Requestor__c},
+
+We are pleased to inform you that your Case #{!Case.CaseNumber}, has been successfully resolved and is now closed. We hope that the resolution has met your expectations, and your issue has been satisfactorily addressed. The details of the case are as follows:
+
+Case Subject: {!Case.Subject}
+
+Case Owner: {!Case.OwnerFullName}
+
+However, your satisfaction is of utmost importance to us. If, for any reason, you find that the issue is not completely resolved or if you encounter any further concerns related to this matter, please do not hesitate to reach out to us. We are more than happy to reopen the case and continue our efforts to ensure your complete satisfaction.
+
+Best Regards,
+
+Helpdesk Support Team</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

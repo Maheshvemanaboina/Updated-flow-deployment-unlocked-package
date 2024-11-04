@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      .content {
+        padding: 20px;
+      }
+      .footer {
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+      }
+      .case-details {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Helpdesk Support</h2>
+    </div>
+    <div class="content">
+      <p>Dear {!Case.Case_Requestor__c},</p>
+      </br>
+      <p>Your Case #<a href="{!Case.Link}">{!Case.CaseNumber}</a>, has been marked as "Awaiting Customer Response". The details of the case are as follows:</p>
+      <div class="case-details">
+        <p><strong>Case Subject:</strong> {!Case.Subject}</p>
+        <p><strong>Date/Time Opened:</strong> {!Case.CreatedDate}</p>
+      </div>
+      <p>To provide you with the best support and ensure a swift resolution, kindly provide necessary information requested by {!Case.OwnerFullName} to move forward on this. Our support team is standing by to assist you further once we receive your response.</p>
+</br>
+      <p>Best Regards,</p>
+      <p>Helpdesk Support Team</p>
+    </div>
+  </body>
+</html>
